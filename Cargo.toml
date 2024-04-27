@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-wry = "0.35"
-tao = { version = "0.24", default-features = false,features = ["rwh_05"] }
+wry = "0.39.3"
+tao = { version = "0.27", default-features = false,features = ["rwh_06"] }
 tempdir = "0.3"
 clap = { version = "4", features = ["derive"] }
 url = "2.5.0"

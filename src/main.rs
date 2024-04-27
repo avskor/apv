@@ -1,6 +1,6 @@
 use clap::Parser;
 use eyre::eyre;
-use std::path::{PathBuf, Path};
+use std::path::PathBuf;
 use std::process::Command;
 use tao::{
     event::{Event, WindowEvent},
@@ -109,7 +109,7 @@ fn main() -> eyre::Result<()> {
         WebViewBuilder::new_gtk(vbox)
     };
 
-    let _webview = builder.with_url(&html_file)?.build()?;
+    let _webview = builder.with_url(&html_file).build()?;
 
     event_loop.run(move |event, _, control_flow| {
         *control_flow = ControlFlow::Wait;
